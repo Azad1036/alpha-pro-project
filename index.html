@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,106 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom Css Style -->
     <link rel="stylesheet" href="./style/style.css">
+    <!-- Font Ansome Kit -->
+    <script src="https://kit.fontawesome.com/5a2d0dcfba.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   <main class="bg-[#010313] min-h-screen bg-[url(/images/background.png)] bg-no-repeat">
-    <section class="home">
-        <h1 class="text-4xl text-white">ALPHABET CLASH</h1>
-    </section>
+    <main class="bg-[#010313] min-h-screen bg-[url(/images/background.png)] bg-no-repeat bg-center">
+        <!-- Home Scrren Start -->
+        <section class="home flex min-h-screen justify-center items-center text-white">
+            <div class="flex flex-col items-center gap-10">
+                <h1 class="text-8xl anton-regular">ALPHABET CLASH</h1>
+                <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn bg-white">Play Now</button>
+            </div>
+        </section>
+        <!-- Home Scrren end -->
+        <!-- Play Ground Start -->
+        <section class="play hidden">
+            <div>
+            <div class="flex flex-col items-center pt-20">
+                <!-- Playground Screen start -->
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                    <div class=" flex justify-center ">
+                       <p class=" text-white bg-[#2F2941] px-2 py-4 rounded-2xl "> Don't watch keyboard  while playing...</p>
+                    </div>
+                    <div class="flex justify-center items-center font-extrabold  h-full">
+                        <p class="text-black text-8xl">Y</p>
+                    </div>
+                </div>
+                
+                <!-- Playground Screen end-->
+                <!-- Playground Keyboard start-->
+                <div>
+                    <div class="flex justify-center gap-1 pt-5 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+                </div>
+                <!-- Playground Keyboard end -->
+            </div>
+        </section>
+                <!-- Playground Scero start-->
+        <section class="reuslt flex justify-center pt-5 hidden">
+            <div class="flex justify-center w-3/4">
+            <div class="space-x-96">
+                <button class="btn rounded-full">
+                    Life
+                    <i class="fa-solid fa-heart-circle-bolt"></i>
+                    <span>1</span>
+                  </button>
 
-    <section class="play">
-
-    </section>
-
-    <section class="reuslt">
-
-    </section>  
-   </main>
+                  <button class="btn rounded-full">
+                    Score
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>1</span>
+                  </button>
+            </div>
+        </div>
+    </div>
+        </section>
+        <!-- Playground Scero end-->
+        <section class="flex  justify-center items-center min-h-screen hidden">
+            <div class="space-y-4 text-center bg-[#FFFFFF33] p-4 rounded-2xl">
+               <h1>
+                <span class="text-8xl font-medium text-white ">Score : </span> <span class="text-white text-6xl anton-regular">14</span>
+               </h1>
+                <button class="btn bg-white text-black">Play Now</button>
+                <p class="text-white">Pratics More in-shaa-allah you must successful man hobe</p>
+            </div>
+        </section>
+    </main>
 
 </body>
+
 </html>
