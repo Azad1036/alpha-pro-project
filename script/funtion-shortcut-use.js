@@ -39,3 +39,25 @@ function removeBackgroundAlphabat(elements) {
     const removeBackground = document.getElementById(elements);
     removeBackground.classList.remove('bg-orange-400')
 }
+
+//More Alphabat Click Remove Background
+function removeAlphabatBackground(elements) {
+    const element = document.getElementById(elements)
+    const text = element.innerText ;
+    return text ;
+}
+
+//Update Scroe and life Scrion
+
+function updateElementsById(elements) {
+    const element = document.getElementById(elements);
+    const textElements = element.innerText ;
+    const convatElements = parseInt(textElements);
+    return convatElements;
+}
+
+function setElementsVlauseById(elements,allvalues) {
+    const element = document.getElementById(elements);
+    element.innerText = allvalues ;
+}
+
