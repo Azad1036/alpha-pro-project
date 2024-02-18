@@ -33,3 +33,9 @@ function setBackgroundAlphabat(elements) {
     const backgroundColor = document.getElementById(elements);
     backgroundColor.classList.add('bg-orange-400')
 }
+
+//Remove Alphabat Bacground Color
+function removeBackgroundAlphabat(elements) {
+    const removeBackground = document.getElementById(elements);
+    removeBackground.classList.remove('bg-orange-400')
+}
